@@ -11,7 +11,7 @@ from setuptools import find_packages, setup
 
 
 setup(
-    name='indico-plugin-custom-themes',
+    name='indico-plugin-themes-lcagenda',
     version='2.0.dev0',
     url='https://github.com/indico/indico-plugins-cern',
     license='MIT',
@@ -24,8 +24,7 @@ setup(
         'indico>=2.1.dev0'
     ],
     entry_points={
-        'indico.plugins': {'themes_cern = indico_custom_themes.plugins:CERNThemesPlugin',
-                           'themes_lcagenda = indico_custom_themes.plugins:LCAgendaThemesPlugin'}
+        'indico.plugins': {'themes_lcagenda = indico_themes_lcagenda.plugin:LCAgendaThemesPlugin'}
     },
     classifiers=[
         'Environment :: Plugins',
